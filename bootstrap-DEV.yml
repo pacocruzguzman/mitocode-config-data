@@ -16,3 +16,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://discovery-server.mitocode.com:8761/eureka
+---
+server:
+  port: ${CONFIG.SERVER.PORT:9000}
