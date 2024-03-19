@@ -10,5 +10,5 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/transito_servicios
-    username: mitocode
-    password: mitocode
+    username: root
+    password: root
