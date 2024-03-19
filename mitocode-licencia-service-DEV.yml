@@ -12,6 +12,3 @@ spring:
     url: jdbc:mysql://localhost/transito_servicios
     username: mitocode
     password: mitocode
-  data:
-    mongodb:
-      uri: mongodb://mitocode:mitocode@localhost:27017/transito_servicios
