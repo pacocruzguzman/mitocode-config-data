@@ -14,4 +14,4 @@ spring:
     password: root
   data:
     mongodb:
-      uri: mongodb://mitocode:mitocode@localhost:27017/database  
+      uri: mongodb://mitocode:mitocode@localhost:27017/transito_servicios
