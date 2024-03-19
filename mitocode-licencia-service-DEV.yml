@@ -9,9 +9,9 @@ spring:
       ddl-auto: update  
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/servicios_transito
+    url: jdbc:mysql://localhost/transito_servicios
     username: mitocode
     password: mitocode
   data:
     mongodb:
-      uri: mongodb://mitocode:mitocode@localhost:27017/servicios_transito
+      uri: mongodb://mitocode:mitocode@localhost:27017/transito_servicios
