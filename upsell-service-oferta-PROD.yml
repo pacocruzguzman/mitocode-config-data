@@ -1,0 +1,40 @@
+---
+server:
+  port: 8092
+spring:
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/upsell
+    username: root
+    password: root
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+restTemplate:
+  connectTimeout: 1000
+  readTimeout: 30000
+pisa:
+  host: http://10.205.76.19
+  authorization: Basic d2FzZ3JhZmljbzpxZGZ0NTh0eTFn
+  services:
+    oferta: /Oferta_puc/services/WSVFACTURA
+upsell:
+  path: serviciosTmx/api
+  oferta: oferta
+  errores: 
+    exito: '00'
+    error-inesperado: '99'
+    telefono-sin-oferta: '60'
+logging:
+  level:
+   com:
+    telmex:
+     upsell: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:%5p} %m%n"  
