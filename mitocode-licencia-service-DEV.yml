@@ -1,0 +1,17 @@
+---
+server:
+  port: 8091
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 
+    username: mitocode
+    password: mitocode
+  data:
+    mongodb:
+      uri: mongodb://mitocode:mitocode@localhost:27017/tbl_licencias
