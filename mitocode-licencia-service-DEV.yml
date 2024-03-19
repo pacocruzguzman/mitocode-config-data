@@ -6,7 +6,7 @@ spring:
     database: mysql
     show-sql: true
     hibernate:
-      ddl-auto: update  
+      ddl-auto: update
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/transito_servicios
