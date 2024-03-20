@@ -2,16 +2,6 @@
 server:
   port: 8091
 spring:
-  jpa:
-    database: mysql
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/transito_servicios
-    username: root
-    password: root
   data:
     mongodb:
-      uri: mongodb://mitocode:mitocode@localhost:27017/transito_servicios
+      uri: mongodb://mitocode:mitocode@localhost:27017/servicios_transito
