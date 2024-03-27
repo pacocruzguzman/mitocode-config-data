@@ -1,0 +1,16 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9005}
+
+user-service-mitocode:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:9010, localhost:9011, localhost:9012, localhost:9013
+    ServerListRefreshInterval: 1500
+
+product-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:9100, localhost:9101, localhost:9102
+    ServerListRefreshInterval: 1500
